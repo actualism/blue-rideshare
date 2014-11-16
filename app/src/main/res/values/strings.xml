@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">BlueRideshare</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="new_profile_setup">New Profile Setup</string>
     <string name="action_settings">Settings</string>
 
 </resources>

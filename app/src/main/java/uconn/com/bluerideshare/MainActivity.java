@@ -1,7 +1,6 @@
 package uconn.com.bluerideshare;
 
 import android.app.Activity;
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,27 +8,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
 
 
-public class NewProfileSetup extends Activity {
+public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_profile_setup);
+        setContentView(R.layout.activity_main_activity);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
     }
-    //some changes
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_new_profile_setup, menu);
+        getMenuInflater().inflate(R.menu.menu_main_activity, menu);
         return true;
     }
 
@@ -59,7 +56,7 @@ public class NewProfileSetup extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_new_profile_setup, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_main_activity, container, false);
             return rootView;
         }
     }
