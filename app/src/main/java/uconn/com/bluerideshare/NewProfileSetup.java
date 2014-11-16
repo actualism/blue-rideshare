@@ -24,7 +24,7 @@ public class NewProfileSetup extends Activity {
                     .commit();
         }
     }
-
+    //some changes
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
