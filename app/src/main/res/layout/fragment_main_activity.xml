@@ -29,7 +29,7 @@
             android:layout_weight="0.11" />
 
         <EditText
-            android:layout_width="338dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editText"
             android:hint="@string/search_ibm_city"
