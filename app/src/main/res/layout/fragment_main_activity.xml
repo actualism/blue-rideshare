@@ -20,7 +20,7 @@
         android:id="@+id/linearLayout">
 
         <ImageView
-            android:layout_width="285dp"
+            android:layout_width="284dp"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
             android:layout_gravity="center_horizontal"
