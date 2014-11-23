@@ -8,7 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ImageButton;
 
 public class MainActivity extends Activity {
 
@@ -54,9 +54,18 @@ public class MainActivity extends Activity {
         }
 
         @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+        public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main_activity, container, false);
+            ImageButton getLocation = (ImageButton) rootView.findViewById(R.id.button_getLocation);
+            getLocation.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    LayoutInflater li = getActivity().getLayoutInflater();
+                    View frag = li.inflate(R.layout.fragment_get_location, container, false);
+                    getActivity().setContentView(frag);
+                }
+            });
             return rootView;
         }
     }
